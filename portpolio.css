@@ -57,6 +57,10 @@
     background-color: var(--bg-color);
     z-index: 10000;
  }
+ .bx-menu{
+   font-size: 2rem;
+   display: none;
+ }
 
  header .logo {
     font-family: cursive;
@@ -165,6 +169,9 @@
  .socialMedia-icons {
     margin-top: 1rem;
  }
+ .socialMedia-icons a{
+   color: white;
+ }
 
  .socialMedia-icons i {
     font-size: 2.5rem;
@@ -177,7 +184,9 @@
     text-shadow: 0px 0px 10px var(--main-color);
  }
  .btn{
-   display: inline-block;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 100px;
    height: 30px;
    background-color: var(--main-color);
@@ -398,6 +407,34 @@ transition: transform 0.5s;
     margin-top: 10rem;
     padding: 5rem;
  }
+ #home h1 span{
+   animation: animate 1s linear infinite;
+   
+   
+ }
+ @keyframes animate {
+   0%{
+      color:red ;
+   }100%{
+      color:va(--main-color)
+   }
+   
+ }
+ #home h1 span:nth-child(1){
+    animation-delay: .2s;
+ }
+ #home h1 span:nth-child(2){
+   animation-delay: .4s;
+ }
+ #home h1 span:nth-child(3){
+   animation-delay: .6s;
+ }
+ #home h1 span:nth-child(4){
+   animation-delay: .8s;
+ }
+ #home h1 span:nth-child(5){
+   animation-delay: 1s;
+ }
  
  
 
@@ -428,6 +465,19 @@ transition: transform 0.5s;
     .project-container img {
        height: 150px;
     }
+    .home-left-side h3 {
+      font-size: 1.5rem;
+   }
+  
+   .home-left-side h1 {
+      color: var(--main-color);
+      text-transform: capitalize;
+      font-size: 2rem;
+   }
+  
+   .home-left-side p {
+      font-size: 1rem;
+   }
 
     #home .home-right-side {
        display: none;
@@ -447,23 +497,35 @@ transition: transform 0.5s;
     .home-left-side {
        padding: 0;
     }
+    #home::before {
+      clip-path: polygon(100% 70%, 0 100%, 100% 100%);
+      
+   }
+  
  }
 
  @media screen and (max-width:1020px) {
     header nav ul {
        position: absolute;
        top: 100%;
-       left: 0;
+       right:-110%;
        background: black;
-       right: 0;
        text-align: center;
        display: inline-block;
        padding: 2rem;
-       display: none;
+       display: block;
+       transition: all .2s ease;
+    }
+    .active{
+      left:0;
+      right:0;
     }
 
     header nav ul li {
        margin-bottom: 2rem;
+    }
+    .bx-menu{
+      display: block;
     }
  }
 
