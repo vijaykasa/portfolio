@@ -465,6 +465,9 @@ transition: transform 0.5s;
     .project-container img {
        height: 150px;
     }
+  #home{
+   margin:4rem 4rem
+  }
     .home-left-side h3 {
       font-size: 1.5rem;
    }
