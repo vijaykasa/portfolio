@@ -108,6 +108,22 @@
     position: relative;
 
  }
+.home-left-side{
+   transition: all .4s ease;
+   transform: translateX(-500px);
+ }
+ .btn{
+   transition: all .4s ease;
+   transform: translateY(50px);
+
+ }
+ .slidup{
+   transform: translateY(0px);
+ }
+ .show{
+   transform: translateX(0px);
+ }
+ 
 
  .home-right-side {
     padding-left: 0;
