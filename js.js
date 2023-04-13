@@ -28,10 +28,3 @@ li.forEach(Element=>{
     })
 })
 
-window.addEventListener("scroll",()=>{
-
-        let value=window.scrollY
-        if(value>690 && value<800){
-        
-        }
-})
