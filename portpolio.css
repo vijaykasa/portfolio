@@ -529,6 +529,9 @@ transition: transform 0.5s;
     header nav ul li {
        margin-bottom: 2rem;
     }
+  header nav ul li a{
+   margin:0;
+  }
     .bx-menu{
       display: block;
     }
